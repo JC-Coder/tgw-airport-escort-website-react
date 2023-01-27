@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #d89000;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.main {
+  background: url("./assets/cloud_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+button {
+  background-color: var(--yellow);
+}
+
+.plane-anim {
+  animation: plane-anim 8s ease infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes plane-anim {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  75% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
