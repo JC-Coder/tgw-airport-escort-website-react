@@ -6,6 +6,7 @@ import travellers from './assets/travellers.png'
 import { testimonails } from "./constants";
 import {AiOutlineArrowUp} from 'react-icons/ai'
 import { useEffect, useState } from "react";
+import {Router, Route, Link} from 'react-router-dom'
 
 const App = () => {
 
@@ -46,9 +47,9 @@ const App = () => {
             <p className="font-medium md:text-2xl text-lg text-white hidden md:block">
               Comfort, Ease , Security!
             </p>
-            <button className="px-4 py-2 text-md font-semibold rounded-full text-gray-100 mx-auto md:mx-0">
+            <a href="/book-escort" className="bg-[var(--yellow)] px-4 py-2 text-md font-semibold rounded-full text-gray-100 mx-auto md:mx-0">
               Book An Escort
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -86,7 +87,7 @@ const App = () => {
       {/* cta section */}
       <div id="cta" className="my-10 flex flex-col space-y-5 items-center justify-center text-center">
         <h3 className="md:text-6xl text-4xl text-white">Let's Make Your visit Stress Free</h3>
-        <button className="py-3 px-5 font-medium rounded-xl hover:scale-105 transition-all text-gray-200">Book An Escort</button>
+        <a href="/book-escort" className="bg-[var(--yellow)] py-3 px-5 font-medium rounded-xl hover:scale-105 transition-all text-gray-200">Book An Escort</a>
       </div>
 
 

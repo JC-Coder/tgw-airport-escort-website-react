@@ -21,7 +21,7 @@ const Navbar = () => {
 
       <ul className="md:block hidden">
           {navLinks.map((nav, index) => (
-            <a href={`#${nav.id}`} className="ml-14 font-[500] text-md text-white">{nav.title}</a>
+            <a href={`../#${nav.id}`} className="ml-14 font-[500] text-md text-white">{nav.title}</a>
           ))}
       </ul>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className={`${!toggle ? 'left-[-100rem]' : 'left-0'} absolute top-0 h-full z-10 w-1/2 p-9 bg-[var(--yellow)]  transition-all ease-linear duration-300 md:hidden`}>
       <ul className="flex flex-col space-y-8">
           {navLinks.map((nav, index) => (
-            <a href={`#${nav.id}`} className="font-[500] text-md text-white">{nav.title}</a>
+            <a href={`../#${nav.id}`} className="font-[500] text-md text-white">{nav.title}</a>
           ))}
       </ul>
       </div>
