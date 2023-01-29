@@ -436,59 +436,271 @@ const BookEscort = () => {
                 T-SHIRTS
               </label>
 
-              <label
-                for=""
-                className="block tracking-wide text-gray-900 text-xs font-bold mb-2"
-              >
-                Queen Tshirt $25
-              </label>
+              <div>
+                <label
+                  for=""
+                  className="block tracking-wide text-gray-900 text-xs font-bold mb-2"
+                >
+                  Queen Tshirt $25
+                </label>
 
-              <div className="flex">
-                <div class="flex items-center mb-4">
-                  <input
-                    id=""
-                    type="checkbox"
-                    value=""
-                    className={`${styles.formCheckbox}`}
-                  />
-                  <label
-                    for=""
-                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >
-                    Arrival Only $150pp
-                  </label>
+                <div className="flex">
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="ml-1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      S
+                    </label>
+                  </div>
+
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="ml-1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      M
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      L
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      XL
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      1X
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      2X
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for=""
+                  className="block tracking-wide text-gray-900 text-xs font-bold mb-2"
+                >
+                  Matching King T-Shirt $25
+                </label>
+
+                <div className="flex">
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="ml-1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      M
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      L
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      XL
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      1X
+                    </label>
+                  </div>
+                  <div class="flex items-center mb-4">
+                    <input
+                      id=""
+                      type="checkbox"
+                      value=""
+                      className={`${styles.formCheckbox}`}
+                    />
+                    <label
+                      for=""
+                      class="1 mr-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      2X
+                    </label>
+                  </div>
                 </div>
 
-                <div class="flex items-center mb-4">
-                  <input
-                    id=""
-                    type="checkbox"
-                    value=""
-                    className={`${styles.formCheckbox}`}
-                  />
-                  <label
-                    for=""
-                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >
-                    Departure Only $150pp
-                  </label>
-                </div>
-                <div class="flex items-center mb-4">
-                  <input
-                    id=""
-                    type="checkbox"
-                    value=""
-                    className={`${styles.formCheckbox}`}
-                  />
-                  <label
-                    for=""
-                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >
-                    Both Arrival and Departure $275pp
-                  </label>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label className={`${styles.formLabel} capitalize`} for="">
+                      Choose Title
+                    </label>
+
+                    <div class="flex items-center mb-4">
+                      <input
+                        id=""
+                        type="checkbox"
+                        value=""
+                        className={`${styles.formCheckbox}`}
+                      />
+                      <label
+                        for=""
+                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        The Queen has Arrived
+                      </label>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                      <input
+                        id=""
+                        type="checkbox"
+                        value=""
+                        className={`${styles.formCheckbox}`}
+                      />
+                      <label
+                        for=""
+                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        The King has Arrived
+                      </label>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                      <input
+                        id=""
+                        type="checkbox"
+                        value=""
+                        className={`${styles.formCheckbox}`}
+                      />
+                      <label
+                        for=""
+                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        Breaking The Spell
+                      </label>
+                    </div>
+                    <div class="flex items-center mb-4">
+                      <input
+                        id=""
+                        type="checkbox"
+                        value=""
+                        className={`${styles.formCheckbox}`}
+                      />
+                      <label
+                        for=""
+                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        It’s In My DNA
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+
+
+          <div className="flex flex-col -mx-3 mb-6 shadow-lg p-4 space-y-2">
+            <p className="text-[var(--yellow)] font-bold">CART</p>
+
+            <p className="font-medium">Escort Services <span className="text-xl">$ 0</span></p>
+            <p className="font-medium">Transportation <span className="text-xl">$ 0</span></p>
+            <p className="font-medium">Security <span className="text-xl">$ 0</span></p>
+            <p className="font-medium">T-Shirts <span className="text-xl">$ 0</span></p>
+            <p className="font-medium">Vat/Taxes <span className="text-xl">$ 0</span></p>
+            <p className="font-bold">SUBTOTAL <span className="text-xl">$ 0</span></p>
+          </div>
+
+          <div>
+            <p>DISCOUNT CODE: _NEWYEAR23</p>
+            <p>Discount Amount $ 25</p>
+
+            <p>YOUR TOTAL IS : <span id="total" className=""> $ 0</span></p>
           </div>
         </form>
       </div>
