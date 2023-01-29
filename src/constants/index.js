@@ -10,17 +10,9 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "service",
-    title: "Our Services",
-  },
-  {
-    id: "trainings",
-    title: "Trainings",
-  },
-  {
-    id: "blog",
-    title: "Blog",
-  },
+    id: "testimonial",
+    title: "Testimonials",
+  }
 ];
 
 export const testimonails = [

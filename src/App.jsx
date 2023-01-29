@@ -36,27 +36,41 @@ const App = () => {
         <img src={travellers} className='' alt="" />
 
         <div className="md:text-left text-center">
-          <h3 className="md:text-5xl text-4xl font-bold">About Us?</h3>
+          <p className="font-medium text-sm text-[var(--yellow)]">ABOUT OUR COMPANY</p>
+          <h3 className="md:text-5xl text-4xl font-bold">World Leading Airport Conceirge Service Provider</h3>
           <p className="mt-5 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum odit cumque at, aliquam, quas provident voluptatum minima aut reiciendis culpa deleniti, minus unde nostrum mollitia labore itaque eius ipsum inventore deserunt rerum maiores laboriosam animi voluptatem sint! Sapiente, reprehenderit repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, velit quod omnis minima reprehenderit architecto! Distinctio nihil itaque commodi modi.</p>
         </div>
       </div>
 
       {/* testimonial section  */}
-      <div id="testimonial" className={`${styles.paddingX}`}>
+      <div id="testimonial" className={`${styles.paddingX} py-10`}>
         <h3 className="md:text-5xl text-4xl text-center font-bold">What Our Customers Are Saying </h3>
 
         <div className="grid md:grid-cols-2 gap-6 mt-10">
           {testimonails.map((item, index) => (
-            <div className="bg-gray-100 p-4 rounded-lg flex justify-between">
+            <div className="bg-gray-100 p-4 rounded-lg flex md:flex-row flex-col md:space-y-0 space-y-3 items-center text-center justify-between">
               <img src={item.image} className='w-[5rem] h-[5rem] rounded-full' alt="" />
 
-              <div className="ml-5">
+              <div className="md:ml-5">
                 <p className="font-medium text-lg capitalize">{item.name}</p>
                 <p className="text-sm text-gray-600">{item.desc}</p>
               </div>
             </div>
           ))}
         </div>
+      </div>
+
+
+      {/* cta section */}
+      <div id="cta" className="my-10 flex flex-col space-y-5 items-center justify-center text-center">
+        <h3 className="md:text-6xl text-4xl text-white">Let's Make Your visit Stress Free</h3>
+        <button className="py-3 px-5 font-medium rounded-xl hover:scale-105 transition-all">Book An Escort</button>
+      </div>
+
+
+      {/* footer section  */}
+      <div id="footer">
+
       </div>
     </div>
   );

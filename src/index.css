@@ -54,3 +54,13 @@ button {
 .cs-text-yellow {
   color: var(--yellow);
 }
+
+#cta{
+  background: url(./assets/airport.jpg);
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.642);
+}
