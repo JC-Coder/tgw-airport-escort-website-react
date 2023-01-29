@@ -11,6 +11,7 @@
 
 * {
   scroll-behavior: smooth;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .main {
@@ -20,7 +21,7 @@
   background-position: center;
   height: 100vh;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.16);
+  background-color: rgba(0, 0, 0, 0.505);
 }
 
 button {
@@ -48,4 +49,8 @@ button {
   100% {
     transform: translateX(0px);
   }
+}
+
+.cs-text-yellow {
+  color: var(--yellow);
 }

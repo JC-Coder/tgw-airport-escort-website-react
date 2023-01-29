@@ -1,3 +1,4 @@
+import travellers from '../assets/travellers.png';
 
 export const navLinks = [
   {
@@ -22,29 +23,25 @@ export const navLinks = [
   },
 ];
 
-export const services = [
+export const testimonails = [
   {
-    title: "Project Management",
-    desc: 'The process of managing a task through its life cycle. It involves planning, testing, tracking.'
+    image: travellers,
+    name: 'john doe',
+    desc: ' reprehenderit repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, velit quod omnis minima reprehenderit architecto! Distinctio nihil itaque commodi modi'
   },
   {
-    title: 'Data Analysis',
-    desc: 'The technology by which a process or procedure is performed with minimal human assistance.'
+    image: travellers,
+    name: 'john doe',
+    desc: ' reprehenderit repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, velit quod omnis minima reprehenderit architecto! Distinctio nihil itaque commodi modi'
   },
   {
-    title: 'Market Research',
-    desc: 'Creating plan to spend your money, This spending planer is called a budgeting tool for business.'
+    image: travellers,
+    name: 'john doe',
+    desc: ' reprehenderit repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, velit quod omnis minima reprehenderit architecto! Distinctio nihil itaque commodi modi'
   },
   {
-    title: 'Software Development',
-    desc: 'The process of managing a task through its life cycle. It involves planning, testing, tracking.'
-  },
-  {
-    title: 'Branding and Design',
-    desc: 'The technology by which a process or procedure is performed with minimal human assistance.'
-  },
-  {
-    title: 'Business Development',
-    desc: 'Creating plan to spend your money, This spending planer is called a budgeting tool for business.'
+    image: travellers,
+    name: 'john doe',
+    desc: ' reprehenderit repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, velit quod omnis minima reprehenderit architecto! Distinctio nihil itaque commodi modi'
   },
 ]
