@@ -4,8 +4,30 @@ import { Navbar } from "./components";
 import plane1 from "./assets/airplane2.png";
 import travellers from './assets/travellers.png'
 import { testimonails } from "./constants";
+import {AiOutlineArrowUp} from 'react-icons/ai'
+import { useEffect, useState } from "react";
 
 const App = () => {
+
+  // scroll to top function 
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [showButton])
+
+  function handleScroll(){
+    if(window.pageYOffset > 100 && !showButton){
+      setShowButton(true);
+    } else if(window.pageYOffset <= 100 && showButton){
+      setShowButton(false)
+    }
+  }
+
+
   return (
     <div className="w-full overflow-hidden">
       <div className="main">
@@ -48,7 +70,7 @@ const App = () => {
 
         <div className="grid md:grid-cols-2 gap-6 mt-10">
           {testimonails.map((item, index) => (
-            <div className="bg-gray-100 p-4 rounded-lg flex md:flex-row flex-col md:space-y-0 space-y-3 items-center text-center justify-between">
+            <div className="bg-gray-100 p-4 rounded-lg flex md:flex-row flex-col md:space-y-0 space-y-3 items-center md:text-left text-center justify-between">
               <img src={item.image} className='w-[5rem] h-[5rem] rounded-full' alt="" />
 
               <div className="md:ml-5">
@@ -64,14 +86,20 @@ const App = () => {
       {/* cta section */}
       <div id="cta" className="my-10 flex flex-col space-y-5 items-center justify-center text-center">
         <h3 className="md:text-6xl text-4xl text-white">Let's Make Your visit Stress Free</h3>
-        <button className="py-3 px-5 font-medium rounded-xl hover:scale-105 transition-all">Book An Escort</button>
+        <button className="py-3 px-5 font-medium rounded-xl hover:scale-105 transition-all text-gray-200">Book An Escort</button>
       </div>
 
 
       {/* footer section  */}
       <div id="footer">
-
+        <p className="text-center text-medium mb-4"> &copy; 2023 TribalGateWay </p>
       </div>
+
+      {/* back to top button */}
+      {showButton && (
+        <a href="#" className="fixed bottom-10 right-5 bg-[var(--yellow)] p-3 rounded-full text-white"><AiOutlineArrowUp size={20}/></a>
+      )}
+
     </div>
   );
 };
