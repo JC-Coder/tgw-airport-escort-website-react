@@ -61,7 +61,13 @@ const Home = () => {
         <div className="md:text-left text-center">
           <p className="font-medium text-sm text-[var(--yellow)]">ABOUT OUR COMPANY</p>
           <h3 className="md:text-5xl text-4xl font-bold">World Leading Airport Conceirge Service Provider</h3>
-          <p className="mt-5 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum odit cumque at, aliquam, quas provident voluptatum minima aut reiciendis culpa deleniti, minus unde nostrum mollitia labore itaque eius ipsum inventore deserunt rerum maiores laboriosam animi voluptatem sint! Sapiente, reprehenderit repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, velit quod omnis minima reprehenderit architecto! Distinctio nihil itaque commodi modi.</p>
+          <p className="mt-5 text-gray-600">We are a premium airport assistance company dedicated to providing our clients with exceptional and personalized services. With years of experience in the industry, our team of experts is dedicated to making your travel experience stress-free and memorable. <br/> <br/>
+
+We understand the challenges of traveling and aim to provide seamless and efficient services that cater to your individual needs. Whether it's assistance with check-in, baggage handling, or fast-track security, our highly trained staff is on hand to ensure a smooth and effortless journey.<br/> <br/>
+
+Our goal is to make your airport experience as comfortable and enjoyable as possible. We believe in providing an exceptional level of service that exceeds your expectations, and our team is committed to making that happen.<br/>  <br/>
+
+At ABC Airport Concierge Services, we go above and beyond to ensure your satisfaction. .</p>
         </div>
       </div>
 
