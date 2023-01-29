@@ -16,6 +16,17 @@ const BookEscort = () => {
         </div>
       </div>
 
+      <div className={`${styles.paddingX}`}>
+        <p className="text-center font-medium mt-[3rem]">
+          Thank you for the opportunity to allow us to make your visit to
+          Nigeria as stress free as possible. Our Airport Escort will greet you
+          once you arrive and guide you through the Immigration Lines as quickly
+          as possible. You can have one loved one meet you right outside of the
+          Security Door. To customize your experience please select your
+          preferences below.{" "}
+        </p>
+      </div>
+
       {/* form component */}
       <div className={`flex justify-center my-[5rem] ${styles.paddingX}`}>
         <form class="w-full max-w-lg">
@@ -30,9 +41,9 @@ const BookEscort = () => {
                 type="text"
                 placeholder="Jane"
               />
-              <p class="text-red-500 text-xs italic">
+              {/* <p class="text-red-500 text-xs italic">
                 Please fill out this field.
-              </p>
+              </p> */}
             </div>
             <div class="w-full md:w-1/2 px-3">
               <label className={`${styles.formLabel}`} for="grid-last-name">
@@ -684,23 +695,55 @@ const BookEscort = () => {
             </div>
           </div>
 
-
           <div className="flex flex-col -mx-3 mb-6 shadow-lg p-4 space-y-2">
             <p className="text-[var(--yellow)] font-bold">CART</p>
 
-            <p className="font-medium">Escort Services <span className="text-xl">$ 0</span></p>
-            <p className="font-medium">Transportation <span className="text-xl">$ 0</span></p>
-            <p className="font-medium">Security <span className="text-xl">$ 0</span></p>
-            <p className="font-medium">T-Shirts <span className="text-xl">$ 0</span></p>
-            <p className="font-medium">Vat/Taxes <span className="text-xl">$ 0</span></p>
-            <p className="font-bold">SUBTOTAL <span className="text-xl">$ 0</span></p>
+            <p className="font-medium">
+              Escort Services <span className="text-xl">$ 0</span>
+            </p>
+            <p className="font-medium">
+              Transportation <span className="text-xl">$ 0</span>
+            </p>
+            <p className="font-medium">
+              Security <span className="text-xl">$ 0</span>
+            </p>
+            <p className="font-medium">
+              T-Shirts <span className="text-xl">$ 0</span>
+            </p>
+            <p className="font-medium">
+              Vat/Taxes <span className="text-xl">$ 0</span>
+            </p>
+            <p className="font-bold">
+              SUBTOTAL <span className="text-xl">$ 0</span>
+            </p>
           </div>
 
           <div>
             <p>DISCOUNT CODE: _NEWYEAR23</p>
             <p>Discount Amount $ 25</p>
 
-            <p>YOUR TOTAL IS : <span id="total" className=""> $ 0</span></p>
+            <p className="font-bold mt-2">
+              YOUR TOTAL IS :{" "}
+              <span id="total" className="">
+                {" "}
+                $ 0
+              </span>
+            </p>
+          </div>
+
+          <div className="bg-black rounded-md text-white p-3 mt-9 shadow-md opacity-90">
+            <p className="mb-3">
+              Payments can be sent via <br /> World Remit/Remitly/Sendwave
+              /Western Union
+            </p>
+
+            <p>Roberta Toniatte Bryant</p>
+            <p>
+              Lekki, Lagos, Nigeria <br /> tribalgatewayllc@gmail.com <br />
+              +234-913-903-0389
+            </p>
+
+            <p className="mt-3">Access Bank Acct#: 1662807523</p>
           </div>
         </form>
       </div>
