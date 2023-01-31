@@ -1,9 +1,102 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/bookEscort.css";
 import { Navbar } from "../components";
 import styles from "../style";
 
 const BookEscort = () => {
+  const [subTotal, setSubtotal] = useState(0);
+  const [tshirtsTotal, setTshirtsTotal] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [categoryState, setCategoryState] = useState({
+    escortTotal: 0,
+    transportTotal: 0,
+    securityTotal: 0,
+  });
+
+  const categories = {
+    escort: "escort",
+    transport: "transport",
+    security: "security",
+  };
+
+  function handleChange(e) {
+    let category = e.target.dataset.category;
+    let isChecked = e.target.checked;
+    let value = parseInt(e.target.value);
+
+    if (Object.keys(categories).includes(category) && isChecked) {
+      setCategoryState((prev) => ({
+        ...prev,
+        [`${category}Total`]: prev[`${category}Total`] + value,
+      }));
+    } else if (Object.keys(categories).includes(category) && !isChecked) {
+      setCategoryState((prev) => ({
+        ...prev,
+        [`${category}Total`]: prev[`${category}Total`] - value,
+      }));
+    }
+  }
+
+  // handle sub total
+  useEffect(() => {
+    let arrayFromCategoryState = Object.values(categoryState);
+    setSubtotal(arrayFromCategoryState.reduce((a, b) => a + b, 0));
+  }, [categoryState]);
+
+  // handle total
+  useEffect(() => {
+    let discountPrice = 25;
+    setTotal(() => (subTotal > 30 ? subTotal - discountPrice : 0));
+  }, [subTotal]);
+
+  const [queenCheckboxes, setQueenCheckboxes] = useState({});
+  const [kingCheckboxes, setKingCheckboxes] = useState({});
+
+  function handleQueenTshirtChange(e) {
+    setQueenCheckboxes({
+      ...queenCheckboxes,
+      [e.target.dataset.category]: e.target.checked,
+    });
+  }
+
+  function handleKingTshirtChange(e) {
+    setKingCheckboxes({
+      ...kingCheckboxes,
+      [e.target.dataset.category]: e.target.checked,
+    });
+  }
+
+  // update prices on tshirt select
+  useEffect(() => {
+    const isAtLeastOneQueenCheckboxChecked = Object.values(
+      queenCheckboxes
+    ).some((checkbox) => checkbox === true);
+    const isAtLeastOneKingCheckboxChecked = Object.values(kingCheckboxes).some(
+      (checkbox) => checkbox === true
+    );
+
+    let queenValue = 0;
+    let kingValue = 0;
+
+    if (isAtLeastOneQueenCheckboxChecked) {
+      queenValue = 25;
+    }
+
+    if (isAtLeastOneKingCheckboxChecked) {
+      kingValue = 25;
+    }
+
+    if (!isAtLeastOneQueenCheckboxChecked) {
+      queenValue = 0;
+    }
+
+    if (!isAtLeastOneKingCheckboxChecked) {
+      kingValue = 0;
+    }
+
+    setTshirtsTotal(() => kingValue + queenValue);
+  }, [queenCheckboxes, kingCheckboxes, tshirtsTotal]);
+
   return (
     <div>
       <div className={`banner ${styles.paddingX}`}>
@@ -161,7 +254,9 @@ const BookEscort = () => {
                 <input
                   id=""
                   type="checkbox"
-                  value=""
+                  value="150"
+                  onChange={handleChange}
+                  data-category="escort"
                   className={`${styles.formCheckbox}`}
                 />
                 <label
@@ -176,7 +271,9 @@ const BookEscort = () => {
                 <input
                   id=""
                   type="checkbox"
-                  value=""
+                  value="150"
+                  onChange={handleChange}
+                  data-category="escort"
                   className={`${styles.formCheckbox}`}
                 />
                 <label
@@ -190,7 +287,9 @@ const BookEscort = () => {
                 <input
                   id=""
                   type="checkbox"
-                  value=""
+                  value="275"
+                  onChange={handleChange}
+                  data-category="escort"
                   className={`${styles.formCheckbox}`}
                 />
                 <label
@@ -217,7 +316,7 @@ const BookEscort = () => {
                   Name
                 </label>
                 <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`${styles.formInput}`}
                   id="grid-first-name"
                   type="text"
                   placeholder="e.g James Michael"
@@ -231,7 +330,7 @@ const BookEscort = () => {
                   Phone
                 </label>
                 <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className={`${styles.formInput}`}
                   id="grid-last-name"
                   type="number"
                   placeholder="+234 5688383748"
@@ -253,7 +352,7 @@ const BookEscort = () => {
                   Name
                 </label>
                 <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`${styles.formInput}`}
                   id="grid-first-name"
                   type="text"
                   placeholder="e.g James Michael"
@@ -267,7 +366,7 @@ const BookEscort = () => {
                   Phone
                 </label>
                 <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className={`${styles.formInput}`}
                   id="grid-last-name"
                   type="number"
                   placeholder="+1 235 3445344"
@@ -290,7 +389,9 @@ const BookEscort = () => {
                 <input
                   id=""
                   type="checkbox"
-                  value=""
+                  value="50"
+                  onChange={handleChange}
+                  data-category="transport"
                   className={`${styles.formCheckbox}`}
                 />
                 <label
@@ -306,7 +407,9 @@ const BookEscort = () => {
                 <input
                   id=""
                   type="checkbox"
-                  value=""
+                  value="50"
+                  onChange={handleChange}
+                  data-category="transport"
                   className={`${styles.formCheckbox}`}
                 />
                 <label
@@ -321,7 +424,9 @@ const BookEscort = () => {
                 <input
                   id=""
                   type="checkbox"
-                  value=""
+                  value="100"
+                  onChange={handleChange}
+                  data-category="transport"
                   className={`${styles.formCheckbox}`}
                 />
                 <label
@@ -337,7 +442,9 @@ const BookEscort = () => {
                 <input
                   id=""
                   type="checkbox"
-                  value=""
+                  value="100"
+                  onChange={handleChange}
+                  data-category="transport"
                   className={`${styles.formCheckbox}`}
                 />
                 <label
@@ -396,7 +503,9 @@ const BookEscort = () => {
                     <input
                       id=""
                       type="checkbox"
-                      value=""
+                      value="50"
+                      onChange={handleChange}
+                      data-category="security"
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -410,7 +519,9 @@ const BookEscort = () => {
                     <input
                       id=""
                       type="checkbox"
-                      value=""
+                      value="70"
+                      onChange={handleChange}
+                      data-category="security"
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -461,6 +572,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="qs"
+                      onChange={handleQueenTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -476,6 +589,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="qs"
+                      onChange={handleQueenTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -490,6 +605,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="qs"
+                      onChange={handleQueenTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -504,6 +621,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="qs"
+                      onChange={handleQueenTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -518,6 +637,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="qs"
+                      onChange={handleQueenTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -532,6 +653,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="qs"
+                      onChange={handleQueenTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -558,6 +681,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="ms"
+                      onChange={handleKingTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -572,6 +697,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="ms"
+                      onChange={handleKingTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -586,6 +713,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="ms"
+                      onChange={handleKingTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -600,6 +729,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="ms"
+                      onChange={handleKingTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -614,6 +745,8 @@ const BookEscort = () => {
                       id=""
                       type="checkbox"
                       value=""
+                      data-category="ms"
+                      onChange={handleKingTshirtChange}
                       className={`${styles.formCheckbox}`}
                     />
                     <label
@@ -699,22 +832,25 @@ const BookEscort = () => {
             <p className="text-[var(--yellow)] font-bold">CART</p>
 
             <p className="font-medium">
-              Escort Services <span className="text-xl">$ 0</span>
+              Escort Services{" "}
+              <span className="text-xl">$ {categoryState.escortTotal}</span>
             </p>
             <p className="font-medium">
-              Transportation <span className="text-xl">$ 0</span>
+              Transportation{" "}
+              <span className="text-xl">$ {categoryState.transportTotal}</span>
             </p>
             <p className="font-medium">
-              Security <span className="text-xl">$ 0</span>
+              Security{" "}
+              <span className="text-xl">$ {categoryState.securityTotal}</span>
             </p>
             <p className="font-medium">
-              T-Shirts <span className="text-xl">$ 0</span>
+              T-Shirts <span className="text-xl">$ {tshirtsTotal}</span>
             </p>
             <p className="font-medium">
-              Vat/Taxes <span className="text-xl">$ 0</span>
+              Vat/Taxes <span className="text-xl">$ 10</span>
             </p>
             <p className="font-bold">
-              SUBTOTAL <span className="text-xl">$ 0</span>
+              SUBTOTAL <span className="text-xl">$ {subTotal}</span>
             </p>
           </div>
 
@@ -726,7 +862,7 @@ const BookEscort = () => {
               YOUR TOTAL IS :{" "}
               <span id="total" className="">
                 {" "}
-                $ 0
+                $ {total}
               </span>
             </p>
           </div>
