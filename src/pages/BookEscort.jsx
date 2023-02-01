@@ -303,7 +303,7 @@ const BookEscort = () => {
           </div>
 
           <div>
-            <p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <p className={`${styles.formLabel}`}>
               Will someone be in Nigeria to greet you at the airport? If yes,
               then please answer below
             </p>
@@ -340,7 +340,7 @@ const BookEscort = () => {
           </div>
 
           <div>
-            <p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <p className={`${styles.formLabel}`}>
               Emergency Contact in Home Country
             </p>
             <div class="flex flex-wrap -mx-3 mb-6">

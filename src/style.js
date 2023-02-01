@@ -16,7 +16,7 @@ const styles = {
   marginX: "sm:mx-16 mx-6",
   marginY: "sm:my-16 my-6",
 
-  formLabel: "ml-2 uppercase text-sm font-medium text-gray-900 dark:text-gray-300",
+  formLabel: "ml-0 uppercase text-sm mb-2 font-medium text-black dark:text-gray-300",
   formInput:
     "appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
   formCheckbox:
