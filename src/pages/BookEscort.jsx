@@ -261,7 +261,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   Arrival Only $150pp
                 </label>
@@ -278,7 +278,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   Departure Only $150pp
                 </label>
@@ -294,7 +294,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   Both Arrival and Departure $275pp
                 </label>
@@ -310,7 +310,7 @@ const BookEscort = () => {
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2"
+                  class="block uppercase tracking-wide text-gray-700 text-sm font-medium mb-2"
                   for="grid-first-name"
                 >
                   Name
@@ -324,7 +324,7 @@ const BookEscort = () => {
               </div>
               <div class="w-full md:w-1/2 px-3">
                 <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2"
+                  class="block uppercase tracking-wide text-gray-700 text-sm font-medium mb-2"
                   for="grid-last-name"
                 >
                   Phone
@@ -346,7 +346,7 @@ const BookEscort = () => {
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2"
+                  class="block uppercase tracking-wide text-gray-700 text-sm font-medium mb-2"
                   for="grid-first-name"
                 >
                   Name
@@ -360,7 +360,7 @@ const BookEscort = () => {
               </div>
               <div class="w-full md:w-1/2 px-3">
                 <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2"
+                  class="block uppercase tracking-wide text-gray-700 text-sm font-medium mb-2"
                   for="grid-last-name"
                 >
                   Phone
@@ -380,7 +380,7 @@ const BookEscort = () => {
               <label className={`${styles.formLabel}`} for="">
                 Transportation
               </label>
-              <p className="text-xs -mt-2 mb-4 font-semibold italic">
+              <p className="text-xs -mt-1 mb-4 font-semibold italic">
                 * Please indicate if you will need transportation on the day of
                 your Arrival and Departure.{" "}
               </p>
@@ -396,7 +396,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   I will need transportation from the airport to my housing
                   accommodations on the day of my Arrival. ($50)
@@ -414,7 +414,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   I will need transportation from my housing accommodation to
                   the airport of the day of my Departure. ($50)
@@ -431,7 +431,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   For my arrival, I will need transportation for my Relative to
                   be picked up and brought to the airport to greet me, and then
@@ -449,7 +449,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   I will also need this for my Departure. The driver will pick
                   us up from our accommodation and take us to the airport. The
@@ -466,7 +466,7 @@ const BookEscort = () => {
               <label className={`${styles.formLabel}`} for="">
                 Security
               </label>
-              <p className="text-xs -mt-2 mb-4 font-semibold italic">
+              <p className="text-xs -mt-1 mb-4 font-semibold italic">
                 * Would you like to have a security officer to escort you for
                 the day?{" "}
               </p>
@@ -480,7 +480,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   No
                 </label>
@@ -495,7 +495,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   Yes
                   {/* nested child starts */}
@@ -510,7 +510,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="ml-2 text-sm font-medium text-gray-900 "
+                      class="ml-2 text-md font-medium text-gray-900 "
                     >
                       Private Officer $50 daily
                     </label>
@@ -526,7 +526,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="ml-2 text-sm font-medium text-gray-900 "
+                      class="ml-2 text-md font-medium text-gray-900 "
                     >
                       Police Officer $70 daily
                     </label>
@@ -543,7 +543,7 @@ const BookEscort = () => {
                 />
                 <label
                   for=""
-                  class="ml-2 text-sm font-medium text-gray-900 "
+                  class="ml-2 text-md font-medium text-gray-900 "
                 >
                   Visibly Armed $50 daily surcharge (in addition to above
                   Officer Charge)
@@ -578,7 +578,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="ml-1 mr-4 text-sm font-medium text-gray-900 "
+                      class="ml-1 mr-4 text-md font-medium text-gray-900 "
                     >
                       S
                     </label>
@@ -595,7 +595,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="ml-1 mr-4 text-sm font-medium text-gray-900 "
+                      class="ml-1 mr-4 text-md font-medium text-gray-900 "
                     >
                       M
                     </label>
@@ -611,7 +611,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       L
                     </label>
@@ -627,7 +627,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       XL
                     </label>
@@ -643,7 +643,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       1X
                     </label>
@@ -659,7 +659,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       2X
                     </label>
@@ -687,7 +687,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="ml-1 mr-4 text-sm font-medium text-gray-900 "
+                      class="ml-1 mr-4 text-md font-medium text-gray-900 "
                     >
                       M
                     </label>
@@ -703,7 +703,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       L
                     </label>
@@ -719,7 +719,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       XL
                     </label>
@@ -735,7 +735,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       1X
                     </label>
@@ -751,7 +751,7 @@ const BookEscort = () => {
                     />
                     <label
                       for=""
-                      class="1 mr-4 text-sm font-medium text-gray-900 "
+                      class="1 mr-4 text-md font-medium text-gray-900 "
                     >
                       2X
                     </label>
@@ -773,7 +773,7 @@ const BookEscort = () => {
                       />
                       <label
                         for=""
-                        class="ml-2 text-sm font-medium text-gray-900 "
+                        class="ml-2 text-md font-medium text-gray-900 "
                       >
                         The Queen has Arrived
                       </label>
@@ -788,7 +788,7 @@ const BookEscort = () => {
                       />
                       <label
                         for=""
-                        class="ml-2 text-sm font-medium text-gray-900 "
+                        class="ml-2 text-md font-medium text-gray-900 "
                       >
                         The King has Arrived
                       </label>
@@ -803,7 +803,7 @@ const BookEscort = () => {
                       />
                       <label
                         for=""
-                        class="ml-2 text-sm font-medium text-gray-900 "
+                        class="ml-2 text-md font-medium text-gray-900 "
                       >
                         Breaking The Spell
                       </label>
@@ -817,7 +817,7 @@ const BookEscort = () => {
                       />
                       <label
                         for=""
-                        class="ml-2 text-sm font-medium text-gray-900 "
+                        class="ml-2 text-md font-medium text-gray-900 "
                       >
                         It’s In My DNA
                       </label>
@@ -828,8 +828,8 @@ const BookEscort = () => {
             </div>
           </div>
 
-          <div className="flex flex-col -mx-3 mb-6 shadow-lg p-4 space-y-2">
-            <p className="text-[var(--yellow)] font-bold">CART</p>
+          <div className="flex flex-col -mx-3 mb-6 shadow-lg bg-stone-700/30 rounded p-4 space-y-2">
+            <p className="text-[var(--yellow)] text-xl font-bold">CART</p>
 
             <p className="font-medium">
               Escort Services{" "}
